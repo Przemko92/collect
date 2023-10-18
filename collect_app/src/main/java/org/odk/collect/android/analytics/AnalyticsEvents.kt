@@ -84,6 +84,8 @@ object AnalyticsEvents {
      */
     const val MANUAL_CREATE_PROJECT = "ProjectCreateManual"
 
+    const val FROM_URI_CREATE_PROJECT = "ProjectCreateUri"
+
     /**
      * Tracks how often a Google account is used to configure a manually created project
      */

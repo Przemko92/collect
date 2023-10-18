@@ -31,7 +31,9 @@ import org.odk.collect.android.draw.PenColorPickerDialog;
 import org.odk.collect.android.entities.EntitiesRepositoryProvider;
 import org.odk.collect.android.external.AndroidShortcutsActivity;
 import org.odk.collect.android.external.FormUriActivity;
+import org.odk.collect.android.external.ProjectUriActivity;
 import org.odk.collect.android.external.FormsProvider;
+import org.odk.collect.android.external.ProjectsProvider;
 import org.odk.collect.android.external.InstanceProvider;
 import org.odk.collect.android.formentry.BackgroundAudioPermissionDialogFragment;
 import org.odk.collect.android.formentry.ODKView;
@@ -233,6 +235,8 @@ public interface AppDependencyComponent {
 
     void inject(FormsProvider formsProvider);
 
+    void inject(ProjectsProvider projectsProvider);
+
     void inject(InstanceProvider instanceProvider);
 
     void inject(BackgroundAudioPermissionDialogFragment backgroundAudioPermissionDialogFragment);
@@ -264,6 +268,7 @@ public interface AppDependencyComponent {
     void inject(InstanceUploader instanceUploader);
 
     void inject(FormUriActivity formUriActivity);
+    void inject(ProjectUriActivity projectUriActivity);
 
     void inject(MapsPreferencesFragment mapsPreferencesFragment);
 

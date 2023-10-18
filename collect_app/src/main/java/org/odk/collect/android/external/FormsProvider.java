@@ -177,7 +177,7 @@ public class FormsProvider extends ContentProvider {
         switch (URI_MATCHER.match(uri)) {
             case FORMS:
             case NEWEST_FORMS_BY_FORM_ID:
-                return FormsContract.CONTENT_TYPE;
+                return FormsContract. CONTENT_TYPE;
 
             case FORM_ID:
                 return FormsContract.CONTENT_ITEM_TYPE;
